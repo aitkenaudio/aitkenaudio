@@ -3,7 +3,8 @@
     --white: #eee;
     --link: #09BCE8;
     --darklink: #D23708;
-    --padding-inline: clamp(0.5rem, 3vw, 1.5em);
+    /* --padding-inline: clamp(0.5rem, 3vw, 1.5em); */
+    --padding-inline: 2rem;
 }
 html {
     font-size: clamp(1rem, 0.8777rem + 0.5435vw, 1.3125rem);
@@ -88,7 +89,6 @@ footer {
     color: #999;
 }
 footer > * {
-    /* flex-basis: calc((25em - 100%) * 999); */
     flex-grow: 1;
 }
 
