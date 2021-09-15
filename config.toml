@@ -1,0 +1,45 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'Aitken Audio'
+
+
+[Taxonomies]
+
+
+[menu]
+
+  [[menu.main]]
+    identifier = "home"
+    name = "home"
+    url = "/"
+    weight = "100"
+
+  [[menu.main]]
+    identifier = "about"
+    name = "about me"
+    url = "/about-me/"
+    weight = "200"
+
+  [[menu.main]]
+    identifier = "services"
+    name = "services"
+    url = "/services/"
+    pre = '<svg class="icon wrench"><use xlink:href="/img/icomoon.svg#wrench"></use></svg>'
+    weight = "300"
+
+  [[menu.main]]
+    identifier = "pedals"
+    name = "pedals for sale"
+    url = "/pedals-for-sale/"
+    weight = "400"
+
+  [[menu.main]]
+    identifier = "contact"
+    name = "contact me"
+    url = "/contact/"
+    weight = "500"
+
+[markup]
+    [markup.goldmark.parser.attribute]
+    block = true
+    title = true

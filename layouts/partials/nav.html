@@ -1,0 +1,6 @@
+<nav class="main">
+    {{ $thispage := . }}
+    {{ range .Site.Pages }}
+        <a href="{{ if eq . $thispage }}#{{ else }}{{ .RelPermalink }}{{ end }}">{{ .LinkTitle | title }}</a>
+    {{ end }}
+</nav>

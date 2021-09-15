@@ -1,0 +1,192 @@
+:root {
+    --black: #222;
+    --white: #eee;
+    --link: #09BCE8;
+    --darklink: #D23708;
+    --padding-inline: clamp(0.5rem, 3vw, 1.5em);
+}
+html {
+    font-size: clamp(1rem, 0.8777rem + 0.5435vw, 1.3125rem);
+}
+body {
+    margin: 0;
+    font-family: Quicksand, 'segoe ui', sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #eee;
+    background-color: #181818;
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSI+CjxyZWN0IHdpZHRoPSI1MCIgaGVpZ2h0PSI1MCIgZmlsbD0iIzI4MjgyOCI+PC9yZWN0Pgo8Y2lyY2xlIGN4PSIzIiBjeT0iNC4zIiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIzIiBjeT0iMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+CjxjaXJjbGUgY3g9IjEwLjUiIGN5PSIxMi41IiByPSIxLjgiIGZpbGw9IiMzOTM5MzkiPjwvY2lyY2xlPgo8Y2lyY2xlIGN4PSIxMC41IiBjeT0iMTEuMyIgcj0iMS44IiBmaWxsPSJibGFjayI+PC9jaXJjbGU+Cjwvc3ZnPg==");
+    background-attachment: fixed;
+}
+
+.wrapper {
+    max-width: 1280px;
+    min-height: 100vh;
+    margin-inline: auto;
+    background-color: #eee;
+    color: #333;
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+}
+
+nav.main {
+    background-color: #1d1d1d;
+    /* padding: 1em; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-top: 1px solid #333;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link);
+}
+
+nav.main a {
+    display: block;
+    /* height: 100%; */
+    /* width: 100%; */
+    flex-basis: calc((35em - 100%) * 999);
+    flex-grow: 1;
+    padding: 1em;
+    text-align: center;
+    color: var(--link);
+    transition: .4s;
+}
+nav.main a[href="#"],
+nav.main a[href="#"]:hover {
+    background-color: var(--link);
+    color: var(--white);
+    cursor: default;
+}
+nav.main a:hover {
+    background-color: var(--darklink);
+    color: var(--white);
+}
+
+:where(header, footer) {
+    padding: 2em var(--padding-inline);
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    gap: 1em;
+    /* background-image: linear-gradient(44deg, #333333 25%, #242424 25%, #242424 50%, #333333 50%, #333333 75%, #242424 75%, #242424 100%); */
+    /* background-size: 8.64px 8.34px; */
+}
+header {
+    padding-top: 3em;
+    align-items: bottom;
+}
+footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4em;
+    margin-top: 3em;
+    font-size: clamp(14px, 0.8em, 18px);
+    color: #999;
+}
+footer > * {
+    /* flex-basis: calc((25em - 100%) * 999); */
+    flex-grow: 1;
+}
+
+footer .address {
+    flex-basis: max-content;
+    flex-grow: 1;
+}
+header div {
+    font-size: 1.3em;
+}
+header div i {
+    font-size: .8em;
+}
+h1 {
+    grid-column: 1 / -1;
+}
+p:first-child {
+    margin-top: 0;
+}
+
+img {
+    width: 100%;
+}
+svg.social-icon {
+    fill: greenyellow;
+}
+main {
+    padding: 1em var(--padding-inline);
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    gap: 2em;
+}
+.content {
+    /* display: grid; */
+    /* grid-template-columns: 1fr 1fr; */
+    /* gap: 2em; */
+    columns: 400px 2;
+    column-gap: 2em;
+}
+.content :first-child {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    
+    .home .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+main ul {
+    margin: 0;
+    padding: 0;
+
+}
+.services ul > li {
+    /* list-style-type: none; */
+    /* background-image: url(/img/bullet.png); */
+    /* background-repeat: no-repeat; */
+    /* padding-left: 2em; */
+    margin-left: 2em;
+    margin-bottom: 0em;
+    line-height: 31px;
+}
+.services ul > li::marker {
+    color: var(--link);
+    font-size: 2em;
+    line-height: 31px;
+    /* margin-bottom: 0em; */
+}
+/* this is used in the gallery shortcode */
+.gallery {
+    position: relative;
+    margin-bottom: 2em;
+    break-before: always;
+}
+.images {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.images img {
+    width: 100%;
+}
+
+.services img[alt="flyer"] {
+    float: right;
+    width: 100%;
+}
+
+ul.images {
+    width: 450px;
+    position: relative;
+    float: right;
+    margin: 2em;
+}
+ul.images>li {
+    position: absolute;
+    left: 0;
+    top: 0;
+}

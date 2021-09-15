@@ -1,0 +1,52 @@
+<form id="contact" method="post" data-netlify="true">
+    <div class="label name">Name</div>
+    <input class="contact" type="text" name="your_name" value="" />
+
+    <div class="label">Email Address</div>
+    <input class="contact" type="text" name="your_email" value="" />
+
+    <div class="label">Message</div>
+    <textarea class="contact textarea" rows="5" cols="50" name="your_message"></textarea>
+    <div class="send"><input class="submit" type="submit" name="contact_submitted" value="send" /></div>
+</form>
+
+<!-- <form name="contact" method="POST" data-netlify="true">
+    <p>
+        <label><span>Your Name:</span> <input type="text" name="name" /></label>
+    </p>
+    <p>
+        <label><span>Your Email:</span> <input type="email" name="email" /></label>
+    </p>
+
+    <p>
+        <label><span>Message:</span> <textarea name="message"></textarea></label>
+    </p>
+    <p>
+        <button type="submit">
+            Send
+        </button>
+    </p>
+</form> -->
+
+<style>
+    form {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 12px;
+        break-inside: avoid;
+    }
+    .send {
+        grid-column: 2 / -1;
+    }
+    form>div {
+        text-align: right;
+    }
+    form > * {
+        min-width: 100%;
+    }
+    form :is(input, textarea) {
+        border-radius: 3px;
+        box-shadow: none;
+        border: solid 1px #aaa;
+    }
+</style>

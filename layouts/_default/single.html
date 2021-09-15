@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+<h1>{{ .Title }}</h1>
+<div class="content">
+    {{ .Content }}
+</div>
+{{ with eq .Title "Contact Me" }}
+    {{ partial "map" . }}
+{{ end }}
+
+{{ end }}
