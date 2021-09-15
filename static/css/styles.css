@@ -131,6 +131,9 @@ main {
 .content :first-child {
     margin-top: 0;
 }
+.content p {
+    break-inside: avoid;
+}
 
 @media screen and (min-width: 1000px) {
     

@@ -6,7 +6,7 @@
     <input class="contact" type="text" name="your_email" value="" />
 
     <div class="label">Message</div>
-    <textarea class="contact textarea" rows="5" cols="50" name="your_message"></textarea>
+    <textarea class="contact textarea" rows="12" cols="50" name="your_message"></textarea>
     <div class="send"><input class="submit" type="submit" name="contact_submitted" value="send" /></div>
 </form>
 
@@ -37,6 +37,19 @@
     }
     .send {
         grid-column: 2 / -1;
+    }
+    .send input {
+        background-color: var(--link);
+        color: #eee;
+        padding: 0.1em 0.8em .2em .8em;
+        font-size: 1em;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .send input:hover {
+        background-color: var(--darklink);
     }
     form>div {
         text-align: right;
