@@ -4,7 +4,7 @@
     --link: #09BCE8;
     --darklink: #D23708;
     /* --padding-inline: clamp(0.5rem, 3vw, 1.5em); */
-    --padding-inline: 2rem;
+    --padding-inline: 1.5vw;
 }
 html {
     font-size: clamp(1rem, 0.8777rem + 0.5435vw, 1.3125rem);
@@ -142,6 +142,34 @@ main {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+.tagline {
+    min-height: 70vh;
+    background-color: #222;
+    color: #fff;
+    font-size: clamp(3rem, 2.2174rem + 3.4783vw, 5rem);
+    font-family: 'Cormorant Garamond', georgia;
+    font-weight: 400;
+    display: grid;
+    gap: 1rem;
+    place-content: center;
+    text-align: center;
+    margin-inline: calc(var(--padding-inline) * -1);
+    margin-top: -1rem;
+    padding: 1em;
+}
+.tagline > :last-child {
+    font-size: 2rem;
+}
+.tagline i {
+    color: goldenrod;
+}
+.logo img {
+    width: min(30vw, 250px);
+}
+
+
+
 main ul {
     margin: 0;
     padding: 0;
@@ -168,6 +196,9 @@ main ul {
     margin-bottom: 2em;
     break-before: always;
 }
+
+/* -- The images class targets the images in the slideshow on the front page -- */
+
 .images {
     list-style-type: none;
     margin: 0;
@@ -175,6 +206,7 @@ main ul {
 }
 .images img {
     width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 .services img[alt="flyer"] {
