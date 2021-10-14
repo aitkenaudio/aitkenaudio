@@ -1,20 +1,65 @@
-    <div class="gallery" style="break-before: column;">
-      <ul class="images">
-        <li class="show"><img width="450" height="450" src="/img/1.jpg" alt="photo_one" /></li>
-        <li><img width="450" height="450" src="/img/2.jpg" alt="photo_two" /></li>
-        <li><img width="450" height="450" src="/img/3.jpg" alt="photo_three" /></li>
-        <li><img width="450" height="450" src="/img/4.jpg" alt="photo_four" /></li>
-        <li><img width="450" height="450" src="/img/5.jpg" alt="photo_five" /></li>
-      </ul>
+    <div class="gallery">
+      <div class="images">
+        <img src="/img/1.jpg" id="ph-1" alt="photo_one" />
+        <img src="/img/2.jpg" id="ph-2" alt="photo_two" />
+        <img src="/img/3.jpg" id="ph-3" alt="photo_three" />
+        <img src="/img/4.jpg" id="ph-4" alt="photo_four" />
+        <img src="/img/5.jpg" id="ph-5" alt="photo_five" />
+      </div>
     </div>
 
-      <!-- javascript at the bottom for fast page loading -->
-  <script type="text/javascript" src="js/jquery.js"></script>
-  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
-  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
-  <script type="text/javascript" src="js/image_fade.js"></script>
-  <script type="text/javascript">
-    $(document).ready(function() {
-      $('ul.sf-menu').sooperfish();
-    });
-  </script>
+    <style>
+      .gallery {
+        position: relative;
+
+      }
+
+      .images {
+        background-color: #222;
+      }
+
+      .gallery img {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        border-radius: .5vw;
+        animation: img-fade 20s infinite;
+      }
+
+      .gallery:hover img {
+        animation-play-state: paused;
+        cursor: wait;
+      }
+
+      @keyframes img-fade {
+        25% {
+          opacity: 1;
+        }
+
+        40% {
+          opacity: 0;
+        }
+
+      }
+
+      #ph-1 {
+        animation-delay: 16s;
+      }
+
+      #ph-2 {
+        animation-delay: 12s;
+      }
+
+      #ph-3 {
+        animation-delay: 8s;
+      }
+
+      #ph-4 {
+        animation-delay: 4s;
+      }
+
+      #ph-5 {
+        animation-delay: 0;
+      }
+    </style>

@@ -8,6 +8,6 @@ draft: false
 
 Please check out my Social Media page links below and a sample from my Twitter feed to the right. I regularly update these with a diary about the jobs that I'm working on. You will be able to see my passion for amps and read all about my success stories and happy customers. I upload photos of work in progress too so customers can see me in action and all the TLC that their equipment gets at Aitken Audio of Sheffield!
 
-### My latest tweets
+{{< social-media >}}
 
-{{< twitter-timeline >}}
+

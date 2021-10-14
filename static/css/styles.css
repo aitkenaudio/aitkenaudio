@@ -42,6 +42,12 @@ nav.main {
 a {
     text-decoration: none;
     color: var(--link);
+    transition: 0.4s;
+    }
+
+    a:hover,
+    a:focus {
+        color: var(--darklink);
 }
 
 nav.main a {
@@ -111,20 +117,22 @@ p:first-child {
 
 img {
     width: 100%;
+    border-radius: 0.5vw;
 }
 svg.social-icon {
     fill: greenyellow;
 }
 main {
     padding: 1em var(--padding-inline);
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    gap: 2em;
+}
+
+.blog-links main,
+.home main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    column-gap: 2em;
 }
 .content {
-    /* display: grid; */
-    /* grid-template-columns: 1fr 1fr; */
-    /* gap: 2em; */
     columns: 400px 2;
     column-gap: 2em;
 }
@@ -144,6 +152,7 @@ main {
 }
 
 .tagline {
+    grid-column: 1 / -1;
     min-height: 70vh;
     background-color: #222;
     color: #fff;
@@ -175,11 +184,7 @@ main ul {
     padding: 0;
 
 }
-.services ul > li {
-    /* list-style-type: none; */
-    /* background-image: url(/img/bullet.png); */
-    /* background-repeat: no-repeat; */
-    /* padding-left: 2em; */
+.services ul>li {
     margin-left: 2em;
     margin-bottom: 0em;
     line-height: 31px;

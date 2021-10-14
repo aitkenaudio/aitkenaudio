@@ -1,0 +1,55 @@
+    <div class="social">
+
+        <div class="social-line">
+            <a href="https://facebook.com/aitkenaudio" title="My facebook page">
+                <svg class="social-media-icon" width="60" height="60" viewBox="0 0 24 24">
+                    <use xlink:href="#icon-facebook"></use>
+                </svg>
+                <div>Facebook</div>
+            </a>
+        </div>
+        <div class="social-line">
+            <a href="https://twitter.com/aitkenaudio" title="My twitter feed">
+                <svg class="social-media-icon" width="60" height="60" viewBox="0 0 24 24">
+                    <use xlink:href="#icon-twitter"></use>
+                </svg>
+                <div>Twitter</div>
+            </a>
+        </div>
+        <div class="social-line">
+            <a href="https://aitkenaudio.tumblr.com/" title="My Tumblr blog">
+                <svg class="social-media-icon" width="60" height="60" viewBox="0 0 24 24">
+                    <use xlink:href="#icon-tumblr"></use>
+                </svg>
+                <div>Tumblr</div>
+            </a>
+        </div>
+
+    </div>
+
+    <style>
+        .social {
+            break-after: always;
+        }
+
+        .twitter-timeline {
+            width: 100%;
+        }
+
+        .social-line+.social-line {
+            margin-top: 1em;
+        }
+
+        .social-line a {
+            display: flex;
+        }
+
+        a .social-media-icon {
+            fill: var(--link);
+            transition: 0.4s;
+        }
+
+        a:hover .social-media-icon {
+            fill: var(--darklink);
+        }
+    </style>
