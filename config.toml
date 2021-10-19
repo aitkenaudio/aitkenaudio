@@ -1,8 +1,8 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://aitken.netlify.app/'
 languageCode = 'en-us'
 title = 'Aitken Audio'
 
-
+# Having a blank taxonomy section prevents Hugo from generating the default tags and categories
 [Taxonomies]
 
 

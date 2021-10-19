@@ -43,11 +43,11 @@ a {
     text-decoration: none;
     color: var(--link);
     transition: 0.4s;
-    }
+}
 
-    a:hover,
-    a:focus {
-        color: var(--darklink);
+a:hover,
+a:focus {
+    color: var(--darklink);
 }
 
 nav.main a {
@@ -94,7 +94,7 @@ footer {
     font-size: clamp(14px, 0.8em, 18px);
     color: #999;
 }
-footer > * {
+footer>* {
     flex-grow: 1;
 }
 
@@ -130,34 +130,31 @@ main {
 .home main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: 1fr 1fr;
     column-gap: 2em;
 }
 .content {
     columns: 400px 2;
     column-gap: 2em;
 }
+.home .content {
+    display: block;
+}
+
 .content :first-child {
     margin-top: 0;
 }
 .content p {
     break-inside: avoid;
 }
-
-@media screen and (min-width: 1000px) {
-    
-    .home .content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
 .tagline {
     grid-column: 1 / -1;
     min-height: 70vh;
     background-color: #222;
     color: #fff;
     font-size: clamp(3rem, 2.2174rem + 3.4783vw, 5rem);
-    font-family: 'Cormorant Garamond', georgia;
+    font-family: 'Cormorant Garamond',
+    georgia;
     font-weight: 400;
     display: grid;
     gap: 1rem;
@@ -167,7 +164,7 @@ main {
     margin-top: -1rem;
     padding: 1em;
 }
-.tagline > :last-child {
+.tagline> :last-child {
     font-size: 2rem;
 }
 .tagline i {
@@ -178,55 +175,101 @@ main {
 }
 
 
+/* -------- MINI GALLERY ON HOME PAGE --------- */
 
-main ul {
-    margin: 0;
-    padding: 0;
+.gallery {
+    position: relative;
+}
 
+@media screen and (max-width: 760px) {
+    .gallery {
+        min-height: 100vw;
+    }
 }
-.services ul>li {
-    margin-left: 2em;
-    margin-bottom: 0em;
-    line-height: 31px;
+
+.images {
+    background-color: #222;
 }
-.services ul > li::marker {
+
+.gallery img {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    min-width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: .5vw;
+    animation: img-fade 20s infinite;
+}
+
+.gallery:hover img {
+    animation-play-state: paused;
+    cursor: wait;
+}
+
+
+
+@keyframes img-fade {
+    25% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+#ph-1 {
+    animation-delay: 16s;
+}
+
+#ph-2 {
+    animation-delay: 12s;
+}
+
+#ph-3 {
+    animation-delay: 8s;
+}
+
+#ph-4 {
+    animation-delay: 4s;
+}
+
+#ph-5 {
+    animation-delay: 0;
+}
+
+/* ----------  MEDIA QUERIES ---------- */
+
+@media screen and (max-width: 760px) {
+    .home main {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main ul {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    .services ul>li {
+        margin-left: 2em;
+        margin-bottom: 0em;
+        line-height: 31px;
+    }
+.services ul>li::marker {
     color: var(--link);
     font-size: 2em;
     line-height: 31px;
     /* margin-bottom: 0em; */
 }
-/* this is used in the gallery shortcode */
-.gallery {
-    position: relative;
-    margin-bottom: 2em;
-    break-before: always;
-}
 
-/* -- The images class targets the images in the slideshow on the front page -- */
+    /* -- The images class targets the images in the slideshow on the front page -- */
 
-.images {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-.images img {
-    width: 100%;
-    aspect-ratio: 1 / 1;
-}
 
-.services img[alt="flyer"] {
-    float: right;
-    width: 100%;
-}
-
-ul.images {
-    width: 450px;
-    position: relative;
-    float: right;
-    margin: 2em;
-}
-ul.images>li {
-    position: absolute;
-    left: 0;
-    top: 0;
-}
+    .services img[alt="flyer"] {
+        float: right;
+        width: 100%;
+    }
