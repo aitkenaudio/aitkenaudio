@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master # Branch to update (optional; defaults to master)
 
-publish_mode: editorial_workflow
+# publish_mode: editorial_workflow
 
 site_url: https://aitken.netlify.app/
 logo_url: https://aitken.netlify.app/img/AitkenAudio-round-logo-8.png
@@ -11,13 +11,53 @@ media_folder: "static/img" # Media files will be stored in the repo under images
 public_folder: "/img/"
 
 collections:
-  - name: "pages" # Used in routes, e.g., /admin/collections/blog
-    label: "Page" # Used in the UI
-    folder: "/" # The path to the folder where the documents are stored
-    create: false # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
-      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      - {label: "Body", name: "body", widget: "markdown"}
+#  - name: "pages" # Used in routes, e.g., /admin/collections/blog
+#    label: "Page" # Used in the UI
+#    folder: "/" # The path to the folder where the documents are stored
+#    create: false # Allow users to create new documents in this collection
+#    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+#    fields: # The fields for each document, usually in front matter
+#      - {label: "Title", name: "title", widget: "string"}
+#      - {label: "Publish Date", name: "date", widget: "datetime"}
+#      - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+#      - {label: "Body", name: "body", widget: "markdown"}
+        
+- name: 'pages'
+  label: 'Pages'
+  files:
+    - file: 'content/_index.md'
+      label: 'Home'
+      name: 'home'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string'}
+        - { label: 'Body', name: 'body', widget: 'markdown'}
+    - file: 'content/about-me.md'
+      label: 'About Me'
+      name: 'about-me'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string'}
+        - { label: 'Body', name: 'body', widget: 'markdown'}
+    - file: 'content/services.md'
+      label: 'Services'
+      name: 'services'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string'}
+        - { label: 'Body', name: 'body', widget: 'markdown'}
+    - file: 'content/pedals-for-sale.md'
+      label: 'Pedals for Sale Page'
+      name: 'pedals-for-sale'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string'}
+        - { label: 'Body', name: 'body', widget: 'markdown'}
+    - file: 'content/blog-feed.md'
+      label: 'Blog Links'
+      name: 'blog-links'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string'}
+        - { label: 'Body', name: 'body', widget: 'markdown'}
+    - file: 'content/contact.md'
+      label: 'Contact'
+      name: 'contact'
+      fields:
+        - { label: 'Title', name: 'title', widget: 'string'}
+        - { label: 'Body', name: 'body', widget: 'markdown'}

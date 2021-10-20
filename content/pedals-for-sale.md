@@ -14,7 +14,7 @@ Sound clips of my pedals can be heard on YouTube by clicking on the links below.
 
 [Aitken Audio Bear Pedal](https://youtu.be/SBlQ_etS07U) The Bear is an original overdrive design with its roots in the Proco Rat circuit. It provides supreme depth and versatility with its array of controls.
 
-![cat](/img/Cat-Pedal-1.jpg)
+![cat](/img/cat-pedal-square.jpg)
 
 
 ![pedals](/img/pedals-2.jpg)

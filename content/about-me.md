@@ -13,14 +13,13 @@ With many years of experience and a wealth of knowledge fine tuned since I was j
 
 The story began when I couldn't afford to buy good amplifiers and pedals so I decided to build my own. A natural curiosity of how all things amplifier related worked was born and I have never looked back.
 
+My first construction was a fender 5f6 clone which is still going strong and sounds great today! My next was a 150 watt bass head of my own design which lasted many tours and gigs in my youth.
+
 ![at work](/img/about-1.jpg)
-
-
 
 
 ![Michael Aitken](/img/about-2.jpg)
 
-My first construction was a fender 5f6 clone which is still going strong and sounds great today! My next was a 150 watt bass head of my own design which lasted many tours and gigs in my youth.
 
 Many projects have been undertaken since this and I have recently started documenting all the work that I've undertaken which can be seen on my blog and Social Media links page.
 

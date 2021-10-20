@@ -238,6 +238,16 @@ main {
     animation-delay: 0;
 }
 
+/* -------------- ABOUT ME PAGE ----------- */
+
+.about-me p:nth-child(5) {
+    break-after: column;
+}
+
+.about-me p:nth-child(6) {
+    break-before: column;
+}
+
 /* ----------  MEDIA QUERIES ---------- */
 
 @media screen and (max-width: 760px) {
