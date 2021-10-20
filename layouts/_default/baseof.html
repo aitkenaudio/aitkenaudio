@@ -3,9 +3,13 @@
     {{- partial "head.html" . -}}
     <body class="{{ replace .LinkTitle " " "-" | lower }}">
         <div class="wrapper">
-            
+            {{ if .IsHome }}
+            {{ partial "home-tagline" }}
+            {{- partial "nav.html" . -}}
+            {{ else }}
             {{- partial "header.html" . -}}
             {{- partial "nav.html" . -}}
+            {{ end }}
             <main>
             {{- block "main" . }}{{- end }}
             </main>

@@ -10,4 +10,7 @@
     {{ with eq .LinkTitle "Blog Links" }}
     {{ partial "twitter-timeline" }}
     {{ end }}
+    {{ with eq .LinkTitle "Pedals for Sale" }}
+    {{ partial "pedals-gallery" . }}
+    {{ end }}
 {{ end }}

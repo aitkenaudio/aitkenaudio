@@ -127,7 +127,8 @@ main {
 }
 
 .blog-links main,
-.home main {
+.home main,
+.pedals-for-sale main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-template-columns: 1fr 1fr;
@@ -160,7 +161,7 @@ main {
     gap: 1rem;
     place-content: center;
     text-align: center;
-    margin-inline: calc(var(--padding-inline) * -1);
+    /* margin-inline: calc(var(--padding-inline) * -1); */
     margin-top: -1rem;
     padding: 1em;
 }
@@ -179,6 +180,7 @@ main {
 
 .gallery {
     position: relative;
+    height: min-content;
 }
 
 @media screen and (max-width: 760px) {
@@ -206,6 +208,9 @@ main {
     cursor: wait;
 }
 
+.pedals-gallery img {
+    animation-duration: 12s;
+}
 
 
 @keyframes img-fade {
@@ -251,7 +256,8 @@ main {
 /* ----------  MEDIA QUERIES ---------- */
 
 @media screen and (max-width: 760px) {
-    .home main {
+    .home main,
+    .pedals-for-sale main {
         display: block;
     }
 }
@@ -283,3 +289,4 @@ main {
         float: right;
         width: 100%;
     }
+}
