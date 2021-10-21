@@ -5,7 +5,7 @@
         {{ .Content }}
     </div>
     {{ with eq .Title "Contact Me" }}
-    {{ partial "map" . }}
+    {{ partial "map-mapbox" . }}
     {{ end }}
     {{ with eq .LinkTitle "Blog Links" }}
     {{ partial "twitter-timeline" }}

@@ -110,9 +110,20 @@ header div i {
 }
 h1 {
     grid-column: 1 / -1;
+    font-size: 2.4em;
 }
 p:first-child {
     margin-top: 0;
+}
+
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.25em;
+}
+
+h2+p,
+h2+ul {
+    margin-top: 0.25em;
 }
 
 img {
@@ -176,7 +187,7 @@ main {
 }
 
 
-/* -------- MINI GALLERY ON HOME PAGE --------- */
+/* -------- MINI GALLERY ON HOME & Pedals for Sale PAGEs --------- */
 
 .gallery {
     position: relative;
@@ -253,6 +264,50 @@ main {
     break-before: column;
 }
 
+/* ----------- CONTACT PAGE ------------- */
+
+form {
+    margin-right: 1vw;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 12px;
+    break-inside: avoid;
+    break-before: column;
+}
+
+.send {
+    grid-column: 2 / -1;
+}
+
+.send input {
+    background-color: var(--link);
+    color: #eee;
+    padding: 0.1em 0.8em .2em .8em;
+    font-size: 1em;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.send input:hover {
+    background-color: var(--darklink);
+}
+
+form>div {
+    text-align: right;
+}
+
+form>* {
+    min-width: 100%;
+}
+
+form :is(input, textarea) {
+    border-radius: 3px;
+    box-shadow: none;
+    border: solid 1px #aaa;
+}
+
 /* ----------  MEDIA QUERIES ---------- */
 
 @media screen and (max-width: 760px) {
@@ -271,15 +326,14 @@ main {
     }
 
     .services ul>li {
-        margin-left: 2em;
+        margin-left: 1em;
         margin-bottom: 0em;
+        padding-left: 0.3em;
         line-height: 31px;
     }
 .services ul>li::marker {
     color: var(--link);
-    font-size: 2em;
-    line-height: 31px;
-    /* margin-bottom: 0em; */
+    content: '\25c9';
 }
 
     /* -- The images class targets the images in the slideshow on the front page -- */
