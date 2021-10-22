@@ -12,8 +12,8 @@ After several years of design and research, I finally decided to bring out an ef
 
 My take on a harmonic perculator circuit made - famous by Steve Albini.
 
-{{< youtube "f0ZgY2_W_dA" >}}
+{{< yt "f0ZgY2_W_dA" >}}
 
 The Bear is an original overdrive design with its roots in the Proco Rat circuit. It provides supreme depth and versatility with its array of controls.
 
-{{< youtube "SBlQ_etS07U" >}}
+{{< yt "SBlQ_etS07U" >}}

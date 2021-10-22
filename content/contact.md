@@ -1,5 +1,6 @@
 ---
 title: "Contact Me"
+linktitle: "Contact"
 date: 2021-09-03T09:16:44+01:00
 draft: false
 ---
@@ -11,5 +12,3 @@ SHEFFIELD
 S10 3FE
 
 Find location on [Bing maps](https://binged.it/2f4Ryk7)
-
-{{< contact-form >}}

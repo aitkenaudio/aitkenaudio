@@ -4,13 +4,14 @@
     <div class="content">
         {{ .Content }}
     </div>
-    {{ with eq .Title "Contact Me" }}
-    {{ partial "map-mapbox" . }}
-    {{ end }}
     {{ with eq .LinkTitle "Blog Links" }}
     {{ partial "twitter-timeline" }}
     {{ end }}
     {{ with eq .LinkTitle "Pedals for Sale" }}
     {{ partial "pedals-gallery" . }}
+    {{ end }}
+    {{ with eq .LinkTitle "Contact" }}
+    {{ partial "contact-form" . }}
+    {{ partial "map-mapbox" . }}
     {{ end }}
 {{ end }}
