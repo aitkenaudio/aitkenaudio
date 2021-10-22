@@ -264,15 +264,7 @@ iframe.youtube {
     aspect-ratio: 16 /9;
 }
 
-/* -------------- ABOUT ME PAGE ----------- */
 
-.about-me p:nth-child(5) {
-    break-after: column;
-}
-
-.about-me p:nth-child(6) {
-    break-before: column;
-}
 
 /* ----------- CONTACT PAGE ------------- */
 
