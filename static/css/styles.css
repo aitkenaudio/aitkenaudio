@@ -3,7 +3,6 @@
     --white: #eee;
     --link: #09BCE8;
     --darklink: #D23708;
-    /* --padding-inline: clamp(0.5rem, 3vw, 1.5em); */
     --padding-inline: 1.5vw;
 }
 html {
@@ -23,7 +22,7 @@ body {
 .wrapper {
     max-width: 1280px;
     min-height: 100vh;
-    margin-inline: auto;
+    margin: 0 auto;
     background-color: #eee;
     color: #333;
     display: grid;
@@ -32,7 +31,6 @@ body {
 
 nav.main {
     background-color: #1d1d1d;
-    /* padding: 1em; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -52,8 +50,6 @@ a:focus {
 
 nav.main a {
     display: block;
-    /* height: 100%; */
-    /* width: 100%; */
     flex-basis: calc((35em - 100%) * 999);
     flex-grow: 1;
     padding: 1em;
@@ -72,14 +68,12 @@ nav.main a:hover {
     color: var(--white);
 }
 
-:where(header, footer) {
+header, footer {
     padding: 2em var(--padding-inline);
     background-color: var(--black);
     color: var(--white);
     display: flex;
     gap: 1em;
-    /* background-image: linear-gradient(44deg, #333333 25%, #242424 25%, #242424 50%, #333333 50%, #333333 75%, #242424 75%, #242424 100%); */
-    /* background-size: 8.64px 8.34px; */
 }
 header {
     padding-top: 3em;
@@ -163,18 +157,16 @@ main {
 }
 .tagline {
     grid-column: 1 / -1;
-    min-height: 70vh;
+    min-height: 90vh;
     background-color: #222;
     color: #fff;
     font-size: clamp(3rem, 2.2174rem + 3.4783vw, 5rem);
-    font-family: 'Cormorant Garamond',
-    georgia;
+    font-family: 'Cormorant Garamond', georgia, 'Times New Roman', serif;
     font-weight: 400;
     display: grid;
     gap: 1rem;
     place-content: center;
     text-align: center;
-    /* margin-inline: calc(var(--padding-inline) * -1); */
     margin-top: -1rem;
     padding: 1em;
 }
@@ -303,7 +295,8 @@ form>* {
     min-width: 100%;
 }
 
-form :is(input, textarea) {
+form input,
+form textarea {
     border-radius: 3px;
     box-shadow: none;
     border: solid 1px #aaa;
@@ -318,6 +311,7 @@ form :is(input, textarea) {
 @media screen and (max-width: 760px) {
     .home main,
     .pedals-for-sale main,
+    .blog-links main,
     .contact main {
         display: block;
     }
