@@ -302,6 +302,10 @@ form textarea {
     border: solid 1px #aaa;
 }
 
+.hidden {
+    display: none;
+}
+
 .map-section {
     grid-column: 1 / -1;
 }
