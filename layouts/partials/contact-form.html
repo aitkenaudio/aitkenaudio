@@ -1,11 +1,37 @@
-<form id="contact" method="post" data-netlify="true">
-    <div class="label name">Name</div>
-    <input class="contact" type="text" name="your_name" value="" />
+<form
+  id="contact"
+  method="post"
+  netlify-honeypot="bot-field"
+  data-netlify="true"
+>
+  <p class="hidden">
+    <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+  </p>
+  <p>
+    <label> Email: <input type="text" name="email" /> </label>
+  </p>
+  <p>
+    <label> Message: <textarea name="message"></textarea></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
 
-    <div class="label">Your e-mail</div>
-    <input class="contact" type="text" name="your_email" value="" />
 
-    <div class="label">Message</div>
-    <textarea class="contact textarea" rows="12" cols="50" name="your_message"></textarea>
-    <div class="send"><input class="submit" type="submit" name="contact_submitted" value="send" /></div>
+  <div class="label name">Name</div>
+  <input class="contact" type="text" name="your_name" value="" />
+
+  <div class="label">Your e-mail</div>
+  <input class="contact" type="text" name="your_email" value="" />
+
+  <div class="label">Message</div>
+  <textarea
+    class="contact textarea"
+    rows="12"
+    cols="50"
+    name="your_message"
+  ></textarea>
+  <div class="send">
+    <input class="submit" type="submit" name="contact_submitted" value="send" />
+  </div>
 </form>
