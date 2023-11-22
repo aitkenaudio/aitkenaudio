@@ -12,7 +12,7 @@ Aitken Audio is a Sheffield based audio business, founded by Michael Aitken who 
 
 Aitken Audio is located in Sheffield, South Yorkshire and is renowned for great service!
 
-The shop is open Monday to Friday 12 noon to 7pm and on Saturdays by appointment.
+The shop is open Monday to Friday 1pm to 7pm and on Saturdays by appointment.
 
 Phone: [07918 666029](tel:07918666029)	
 
