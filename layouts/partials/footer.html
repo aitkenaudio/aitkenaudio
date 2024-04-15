@@ -1,45 +1,42 @@
 <footer>
 
+    {{ with site.Data.footer.address }}
     <div class="address">
-        <p>Aitken Audio<br>Rose Cottage<br>Cat Lane<br>Sheffield S8 9JQ<br>South Yorkshire</p>
+            {{with .name }}{{ . }}{{ end }}<br>
+            {{with .house }}{{ . }}{{ end }}<br>
+            {{with .street }}{{ . }}{{ end }}<br>
+            {{ with .town }}{{ . }}{{ end }} {{ with .postcode }}{{ . }}{{ end }}<br>
+            {{ with .county }}{{ . }}{{ end }}
     </div>
-    <div>
-        <p>Tel: <a href="tel:07918666029">07918 666029</a></p>
+    {{ end }}
 
-        <p>e-mail: <a href="mailto:aitkenaudio@gmail.com">AitkenAudio@gmail.com</a></p>
+    {{ with site.Data.footer.contact_info }}
+    <div class="contact-info">
+        {{ with .tel }}
+            
+        <p>Tel: <a href="tel:{{ replace . " " "" }}">{{ . }}</a></p>
+        {{ end }}
+        
+        {{ with .email }}
+        <p>e-mail: <a href="mailto:{{ . | lower }}">{{ . }}</a></p>
+        {{ end }}
     </div>
+    {{ end }}
 
-
+    
+    {{ with  site.Data.footer.socials}}
     <div class="social-media">
+        {{ range . }}
         <div>
-            <a href="https://twitter.com/aitkenaudio" title="My twitter feed">
+            <a href="{{ .url }}" title="{{ .hover }}">
                 <svg class="social-icon" width="36" height="36" viewBox="0 0 24 24">
-                    <use xlink:href="#icon-twitter"></use>
+                    <use xlink:href="#icon-{{ .name | lower }}"></use>
                 </svg>
             </a>
         </div>
-
-        <div>
-            <a href="https://facebook.com/aitkenaudio" title="My facebook page">
-                <svg class="social-icon" width="36" height="36" viewBox="0 0 24 24">
-                    <use xlink:href="#icon-facebook"></use>
-                </svg>
-            </a>
-        </div>
-        <div>
-            <a href="https://aitkenaudio.tumblr.com/" title="My Tumblr blog">
-                <svg class="social-icon" width="36" height="36" viewBox="0 0 24 24">
-                    <use xlink:href="#icon-tumblr"></use>
-                </svg>
-            </a>
-        </div>
-        <div><a href="/index.xml" title="RSS feed">
-                <svg class="social-icon" width="36" height="36" viewBox="0 0 24 24">
-                    <use xlink:href="#icon-rss"></use>
-                </svg>
-            </a>
-        </div>
+        {{ end }}
     </div>
+    {{ end }}
 </footer>
 
 <style>
@@ -55,8 +52,9 @@
 
     .social-media {
         display: flex;
-        gap: 1em;
+        gap: 0.5em;
         flex-grow: 0;
+        margin: 0 auto;
     }
 
     .social-media a svg.social-icon {

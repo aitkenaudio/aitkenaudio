@@ -1,0 +1,25 @@
+address:
+  name: Aitken Audio
+  house: Rose Cottage
+  street: Cat Lane
+  town: Sheffield 
+  postcode: S8 9JQ
+  county: South Yorkshire
+
+contact_info:
+  tel: 07918 666029
+  email: AitkenAudio@gmail.com
+
+socials:
+  - name: twitter
+    url: https://twitter.com/aitkenaudio
+    hover: My Twitter feed
+  - name: facebook
+    url: https://facebook.com/aitkenaudio
+    hover: My Facebook Page
+  - name: tumblr
+    url: https://aitkenaudio.tumblr.com/
+    hover: My Tumblr blog
+  - name: RSS
+    url: /index.xml
+    hover: RSS feed
