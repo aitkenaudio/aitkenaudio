@@ -13,7 +13,7 @@ You can grab these exclusive designs over on my [Reverb Shop](<You can find my R
 
 🎸 Hear them in action! Check out my YouTube clips, including my take on the legendary Harmonic Percolator circuit - made famous by Steve Albini.
 
-![](/img/Cat-Pedal-1.jpg)
+![]()
 
 You can find my Reverb [page here](https://reverb.com/uk/shop/aitken-audio). 
 
