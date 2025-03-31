@@ -15,7 +15,7 @@ You can grab these exclusive designs over on my Reverb Shop, where you'll also f
 
 ![](/img/Cat-Pedal-1.jpg)
 
-You can find my reverb [shop page](https://reverb.com/uk/shop/aitken-audio)ere via a secure shopping cart check-out.
+You can find my reverb [shop pag](https://reverb.com/uk/shop/aitken-audio)ere via a secure shopping cart check-out.
 
 ## Youtube clips
 
