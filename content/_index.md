@@ -1,5 +1,5 @@
 ---
-title: The Sound Solution Company
+title: Aitken Audio
 linktitle: home
 date: 2021-09-03T09:16:24+01:00
 draft: false
@@ -15,6 +15,8 @@ But that’s just the start. From hi-fi systems to PA equipment and electric gui
 
 
 Sheffield’s Trusted Audio Expert
+
+
 
 Located in the heart of Sheffield, South Yorkshire, Aitken Audio is renowned for top-notch craftsmanship and exceptional service. Whether you’re a professional musician, an audiophile, or just someone who loves great sound, you’ll get top notch service here.
 
