@@ -4,7 +4,7 @@ date: 2021-09-03T09:17:09+01:00
 draft: false
 weight: 300
 ---
-# **Expert Repairs, Mods & Custom Builds**
+## **Expert Repairs, Mods & Custom Builds**
 
 🎛 **AMPLIFIERS** – Repairs, Servicing, Mods & Custom Builds
 
@@ -22,7 +22,7 @@ Check out my social media for a look at past projects.
 
 ![](/img/screenshot-2025-03-31-at-20.28.59.png)
 
-# **Sound Investment**
+## **Sound Investment**
 
 🔹 Full service – **£50**: Includes bias check, deep clean of sockets & potentiometers, replacement of out-of-spec components, power soaking, plus expert advice on upgrades.
 
