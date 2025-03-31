@@ -5,7 +5,7 @@ date: 2021-09-03T09:17:22+01:00
 weight: 400
 draft: false
 ---
-# Built for Tone, Designed for Style.
+## Built for Tone, Designed for Style.
 
 After years of design, research, and relentless tweaking, I’m proud to offer my own line of boutique effects pedals. Built for tone chasers and pedalheads, each one is crafted with high-quality components and features unique artwork by talented Sheffield artists.
 
@@ -15,11 +15,7 @@ You can grab these exclusive designs over on my [Reverb Shop](<You can find my R
 
 ![](/img/Cat-Pedal-1.jpg)
 
-
-
 You can find my Reverb [page here](https://reverb.com/uk/shop/aitken-audio). 
-
-
 
 ## Youtube clips
 
