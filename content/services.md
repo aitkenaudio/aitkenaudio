@@ -24,9 +24,9 @@ Check out my social media for a look at past projects.
 
 ## **Sound Investment**
 
-🔹 Full service – **£50**: Includes bias check, deep clean of sockets & potentiometers, replacement of out-of-spec components, power soaking, plus expert advice on upgrades.
+🔹 **Full service** – **£50**: Includes bias check, deep clean of sockets & potentiometers, replacement of out-of-spec components, power soaking, plus expert advice on upgrades.
 
-🔹 Labour – **£50** per hour for fault-finding, repairs & custom work.
+🔹 **Labour** – **£50** per hour for fault-finding, repairs & custom work.
 
 (Parts not included, as costs vary by job.)
 
