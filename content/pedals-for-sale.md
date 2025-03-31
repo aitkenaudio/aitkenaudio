@@ -7,21 +7,15 @@ draft: false
 ---
 # Built for Tone, Designed for Style.
 
-
-
 After years of design, research, and relentless tweaking, I’m proud to offer my own line of boutique effects pedals. Built for tone chasers and pedalheads, each one is crafted with high-quality components and features unique artwork by talented Sheffield artists.
 
-
-
 You can grab these exclusive designs over on my Reverb Shop, where you'll also find other gear I’ve got up for sale. Check out my latest listings on my Aitken Audio Reverb Shop for the full selection.
-
-
 
 🎸 Hear them in action! Check out my YouTube clips, including my take on the legendary Harmonic Percolator circuit - made famous by Steve Albini.
 
 ![](/img/Cat-Pedal-1.jpg)
 
-You can find my reverb [shop page](https://reverb.com/uk/shop/aitken-audio)here via a secure shopping cart check-out.
+You can find my reverb [shop page](https://reverb.com/uk/shop/aitken-audio)ere via a secure shopping cart check-out.
 
 ## Youtube clips
 
