@@ -14,6 +14,4 @@ Sheffield
 
 S6 4TJ
 
-
-
-Find location on [Bing maps](https://binged.it/2f4Ryk7)
+Find location on **[Google Maps](https://share.google/KhjyaDU4WFTM9huQr)**
