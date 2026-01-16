@@ -8,8 +8,12 @@ draft: false
 
 If you need any advice about your amps or any other job doing to get the best sound out of your equipment pop in in and see me - please phone to make an appointment first though! Give me a bell on [07918 666029](tel:07918666029), or fill out the contact form. I offer a very reasonably priced service and I work very hard to make sure your equipment sounds fantastic!
 
-Cat Lane\
-SHEFFIELD\
-S8 9JQ
+Loxley Road
+
+Sheffield
+
+S6 4TJ
+
+
 
 Find location on [Bing maps](https://binged.it/2f4Ryk7)
